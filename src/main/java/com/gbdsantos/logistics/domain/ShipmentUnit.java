@@ -19,10 +19,10 @@ public class ShipmentUnit {
     ShipmentStatus status,
     WarehouseId warehouseId
   ) {
-    this.id = new ShipmentUnitId();
+    this.id = id == null ? new ShipmentUnitId() : id;
     this.trackingCode = trackingCode;
     this.sku = sku;
     this.status = status;
-    this.warehouseId = new WarehouseId();
+    this.warehouseId = warehouseId == null ? new WarehouseId() : warehouseId;
   }
 }
